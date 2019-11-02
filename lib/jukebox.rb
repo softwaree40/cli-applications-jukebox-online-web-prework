@@ -47,7 +47,7 @@ def run
      help
    elsif
     user_respond == 'list'
-     list(songs)
+     list
    elsif
     user_respond == 'play'
      play(songs)

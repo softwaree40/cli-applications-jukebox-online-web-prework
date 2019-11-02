@@ -43,6 +43,7 @@ def exit_jukebox
 end
 
 def run(songs)
+      user_respond = gets.strip 
    if user_respond == 'help'
      help
    elsif

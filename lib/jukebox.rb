@@ -43,6 +43,7 @@ def exit_jukebox
 end
 
 def run(songs)
+     puts 
       user_respond = gets.strip 
    if user_respond == 'help'
      help
@@ -54,6 +55,7 @@ def run(songs)
      play
    else
     user_respond == 'exit'
+     
      exit_jukebox
       
     

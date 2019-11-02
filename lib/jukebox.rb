@@ -1,17 +1,19 @@
 # Add your code here
+require 'pry'
 def help
   #puts '- Please enter a command: '
   puts "I accept the following commands:"
-  puts "- help:displays this help message"
-  puts "- list : displays a list of songs you can play"
-  puts "- play : lets you choose a song to play"
-  puts "- exit : exits this program"
+  puts " - help : displays this help message "
+  puts " - list : displays a list of songs you can play"
+  puts " - play : lets you choose a song to play"
+  puts " - exit : exits this program"
   
 end
 def play(songs)
    puts "Please enter a song name or number:"
    user_respond = gets.chomp
    user_respond.strip
+   binding.pry
    if user_respond == songs ||  user_respond == idx
      puts "Playing #{songs[0]}"
    else
@@ -26,6 +28,7 @@ def list (songs)
    end
    return (idx+1.to_s) + word
 end
+
 def exit_junkebox
    puts "Goodbye"
 end
@@ -41,9 +44,8 @@ def run
      play(songs)
    else
     user_respond == 'exit'
-      exit_junkebox
+     exit_junkebox
       
     
    end
-  
 end

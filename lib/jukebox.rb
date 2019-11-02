@@ -14,7 +14,7 @@ def play(songs)
    user_respond = gets.chomp
    user_respond.strip
    binding.pry
-   if user_respond == songs ||  user_respond == idx
+   if user_respond.to_i 
      puts "Playing #{songs[0]}"
    else
      "Invalid input, please try again"

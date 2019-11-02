@@ -18,13 +18,13 @@ def play(songs)
      if songs.include?(user_respond)
      puts "Playing #{user_respond}"
      else
-       "Invalid input, please try again"
+      puts "Invalid input, please try again"
      end
      else
        if songs[user_respond.to_i-1]
          puts "Playing #{songs[user_respond.to_i-1]}"
        else
-      "Invalid input, please try again"
+       puts "Invalid input, please try again"
       end
    end
 end

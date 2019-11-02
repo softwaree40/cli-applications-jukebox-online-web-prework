@@ -50,7 +50,7 @@ def run
      list
    elsif
     user_respond == 'play'
-     play(songs)
+     play
    else
     user_respond == 'exit'
      exit_junkebox

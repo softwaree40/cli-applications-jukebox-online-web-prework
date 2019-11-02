@@ -35,6 +35,7 @@ def list (songs)
      #binding.pry
    
    puts "#{idx+1}. #{word}"
+   end
 end
 
 def exit_junkebox

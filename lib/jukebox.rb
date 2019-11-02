@@ -54,7 +54,7 @@ def run(songs)
      play
    else
     user_respond == 'exit'
-     exit_junkebox
+     exit_jukebox
       
     
    end

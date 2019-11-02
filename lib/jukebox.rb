@@ -14,10 +14,18 @@ def play(songs)
    user_respond = gets.chomp
    user_respond.strip
    binding.pry
-   if user_respond.to_i 
-     puts "Playing #{songs[0]}"
-   else
-     "Invalid input, please try again"
+   if user_respond.to_i == 0 
+     if songs.include?(user_respond)
+     puts "Playing #{user_respond}"
+     else
+       "Invalid input, please try again"
+     end
+     else
+       if songs[user_respond.to_i-1]
+         puts "Playing #{songs[user_respond.to_i-1]}"
+       else
+      "Invalid input, please try again"
+      end
    end
 end
 

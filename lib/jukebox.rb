@@ -49,7 +49,7 @@ def run(songs)
      help
    elsif
     user_respond == 'list'
-     list
+     list(songs)
    elsif
     user_respond == 'play'
      play

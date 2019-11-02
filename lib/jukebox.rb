@@ -43,18 +43,5 @@ def exit_jukebox
 end
 
 def run 
-   if user_respond == 'help'
-     help
-   elsif
-    user_respond == 'list'
-     list
-   elsif
-    user_respond == 'play'
-     play
-   else
-    user_respond == 'exit'
-     exit_junkebox
-      
-    
-   end
+   
 end

@@ -13,7 +13,7 @@ def play(songs)
    puts "Please enter a song name or number:"
    user_respond = gets.chomp
    user_respond.strip
-   binding.pry
+   #binding.pry
    if user_respond.to_i == 0 
      if songs.include?(user_respond)
      puts "Playing #{user_respond}"

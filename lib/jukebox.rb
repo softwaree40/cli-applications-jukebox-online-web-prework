@@ -52,7 +52,7 @@ def run(songs)
      list(songs)
    elsif
     user_respond == 'play'
-     play
+     play(songs)
    else
     user_respond == 'exit'
      
